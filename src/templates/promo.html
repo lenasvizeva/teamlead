@@ -38,6 +38,14 @@
 
 
 <section class="block composition">
+
+    <div class="block__back">
+        <picture>
+            <source srcset="./img/hexagon.jpg">
+            <img src="./img/hexagon.jpg" >
+        </picture>
+    </div>
+
     <div class="page-width">
 
         <div class="container ">
@@ -119,11 +127,38 @@
 <section class="block reviews">
 
     <div class="container">
-        <div class="reviews__slider">
-            <div class="review__card">
-            
-            </div>
+        <div class="reviews__slider glide">
+            <div data-glide-el="track" class="glide__track">
+                <ul class="glide__slides">
 
+                    <div class="review__card card">
+                        <div class="card__img">
+                            <img src="./img/prod.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+
+                    <div class="review__card card">
+                        <div class="card__img">
+                            <img src="./img/prod.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+
+                    <div class="review__card card">
+                        <div class="card__img">
+                            <img src="./img/prod.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </ul>
+            </div>
         </div>
     </div>
 
