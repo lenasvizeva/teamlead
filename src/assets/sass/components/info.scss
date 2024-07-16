@@ -19,11 +19,13 @@
 
         &__info {
             flex-basis: 40%;
+            align-items: flex-end;
 
             p {
                 color: $color-black;
                 font-size: 1.8rem;
                 line-height: 1.5;
+                flex-basis: 80%;
             }
 
             &:last-child {
@@ -39,7 +41,19 @@
                     font-size: 1.6rem;
                     line-height: 1.5;
                     max-width: 30%;
-                    text-align: center;
+                    // text-align: center;
+                    display: flex;
+                    align-items: baseline;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../img/svg/arrow_black.svg');
+                        background-repeat: no-repeat;
+                        flex-basis: 15%;
+                    }
                 }
             }
         }

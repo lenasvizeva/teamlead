@@ -7,7 +7,9 @@
     }
 
     &__card {
-
+        background-color: $color-main;
+        padding: 2rem 0;
+        box-shadow: 4px 4px 5px 1px rgb(0 0 0 / 20%);
 
         .card__author {
             font-size: 1.4rem;

@@ -5,6 +5,7 @@
 html {
     box-sizing: border-box;
     font-family: $base-font-family;
+    scroll-behavior: smooth;
     font-size: 62.5%;                   // Такое значение font-size используется для удобства конвертации px в rem (62.5% от размера шрифта браузера 16px = 10px),
                                         // подробнее об этом методе можно узнать из статьи https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
     // @include tablet {
@@ -62,4 +63,21 @@ body {
             height: 100%;
         }
     }
+}
+
+
+// animation
+
+@keyframes priceAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
