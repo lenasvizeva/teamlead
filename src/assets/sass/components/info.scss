@@ -1,0 +1,48 @@
+.info {
+    
+    .container {
+        flex-flow: wrap;
+        padding: 0 4rem;
+        gap: 3rem 0;
+    }
+
+    .product {
+        background-color: $color-white;
+
+        &__img {
+            flex-basis: 40%;
+            margin-right: 8%;
+
+            img {
+                max-width: 40rem;
+            }
+        }
+
+        &__info {
+            flex-basis: 40%;
+
+            p {
+                color: $color-black;
+                font-size: 1.8rem;
+                line-height: 1.5;
+            }
+
+            &:last-child {
+                flex-basis: 100%;
+            }
+
+            .list {
+                padding: 0 4rem;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    font-size: 1.6rem;
+                    line-height: 1.5;
+                    max-width: 30%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

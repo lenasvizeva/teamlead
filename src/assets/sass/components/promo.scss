@@ -27,14 +27,16 @@
 
 .product {
     position: relative;
-    margin-top: -5%;
+
+    &__img {
+        margin-right: 10%;
+    }
 
     &__img img {
         max-width: 20rem;
     }
 
     &__info {
-        padding-left: 10%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
