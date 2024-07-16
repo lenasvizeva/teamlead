@@ -2,13 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    // overflow: hidden;
     height: 100vh;
 
     .h1 {
         text-align: left;
         font-size: 5.6rem;
         margin-bottom: 4rem;
+    }
+
+    .product {
+        background-color: transparent;
     }
 
     .product &:first-child {
@@ -22,28 +25,8 @@
     p, h1 {
         color: $color-white;
     }
-
 }
 
-.product {
-    position: relative;
-
-    &__img {
-        margin-right: 10%;
-    }
-
-    &__img img {
-        max-width: 20rem;
-    }
-
-    &__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 2rem;
-    }
-    
-}
 
 // composition 
 
@@ -51,7 +34,7 @@
     .container {
         padding-top: 4rem;
         justify-content: space-between;
-        background-color: $color-white;
+        // background-color: $color-white;
     }
 
     &__img {

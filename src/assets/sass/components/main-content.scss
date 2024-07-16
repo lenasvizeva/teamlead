@@ -3,10 +3,34 @@
 *------------------*/
 
 .main-content {
-    // align-items: center;
-    // display: flex;
-    // height: 100vh;
-    // justify-content: center;
-    // text-align: center;
     width: 100%;
+}
+
+.product {
+    position: relative;
+    background-color: $color-white;
+    padding: 0 4rem;
+
+    &__img {
+        margin-right: 10%;
+    }
+
+    &__img img {
+        max-width: 20rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+    }    
+}
+
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    margin: 0;
 }
