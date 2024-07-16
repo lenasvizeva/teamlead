@@ -1,0 +1,28 @@
+.review {
+
+    .container {
+        background-color: #fff;
+        padding: 10rem 0;
+    
+    }
+
+    &__card {
+
+
+        .card__author {
+            font-size: 1.4rem;
+            line-height: 1.5;
+        }
+
+        .card__info {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            
+            p {
+                max-width: 100%;
+                white-space: break-spaces;
+            }
+        }
+    }
+}

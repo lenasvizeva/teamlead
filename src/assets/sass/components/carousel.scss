@@ -1,0 +1,48 @@
+.glide {
+
+
+    &__slides {
+        justify-content: space-between;
+    }
+
+    &__arrows {
+        user-select: none;
+        display: flex;
+
+        .btn {
+            width: 4rem;
+            height: 4rem;
+            background-color: $color-grey;
+            margin-right: 2.4rem;
+            background-image: url('../img/svg/chevron.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all .3s ease-in-out;
+            position: absolute;
+            top: 40%;
+            right: 0;
+            cursor: pointer;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            img {
+                width: 0.9rem;
+                height: 1.6rem;
+                object-fit: cover;
+                margin: 0;
+            }
+
+            &:hover {
+                background-color: #bdbdbd;
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        &--left {
+            transform: rotate(180deg);
+            left: 0;
+        }
+    }    
+}

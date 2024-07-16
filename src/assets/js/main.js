@@ -1,6 +1,6 @@
 window.addEventListener('load', function(){
 
-    new Glide('.reviews__slider', {
+    new Glide('.review__slider', {
         type: 'slider',
         startAt: 0,
         perView: 3,
