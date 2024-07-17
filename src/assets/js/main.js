@@ -1,4 +1,6 @@
 window.addEventListener('load', function(){
+    // var video = document.getElementsById("promovideo")
+    // video.play()
 
     new Glide('.review__slider', {
         type: 'slider',
@@ -64,17 +66,14 @@ window.addEventListener('load', function(){
     // inputs hint
     const hintContainers = document.querySelectorAll('.hint-container')
 
-    // Для каждого .hint-container добавляем обработчики событий
     hintContainers.forEach(function(container) {
         const input = container.querySelector('input')
         const hint = container.querySelector('.hint')
 
-        // При фокусе на инпуте показываем подсказку
         input.addEventListener('focus', function() {
             hint.style.display = 'block'
         })
 
-        // При снятии фокуса с инпута скрываем подсказку
         input.addEventListener('blur', function() {
             hint.style.display = 'none'
         });
