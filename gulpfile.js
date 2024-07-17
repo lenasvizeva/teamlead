@@ -9,7 +9,7 @@ const browserSync = require("browser-sync").create();
 const nunjucksRender = require("gulp-nunjucks-render");
 const autoprefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
-// const deploy = require('gulp-gh-pages');
+const deploy = require('gulp-gh-pages');
 
 function imageMin(cb) {
     gulp.src("src/assets/img/**/*")
