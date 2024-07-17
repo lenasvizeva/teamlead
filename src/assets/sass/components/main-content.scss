@@ -9,15 +9,22 @@
 
 .product {
     position: relative;
-    background-color: $color-white;
     padding: 0 4rem;
 
     &__img {
         margin-right: 10%;
+
+        @include mobile {
+            margin-right: 0;
+        }
     }
 
     &__img img {
         max-width: 20rem;
+
+        @include mobile {
+            max-width: 15rem;
+        }
     }
 
     &__info {

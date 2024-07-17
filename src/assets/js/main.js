@@ -4,7 +4,7 @@ window.addEventListener('load', function(){
         type: 'slider',
         startAt: 0,
         perView: 3,
-        gap: 40,
+        gap: 0,
         autoplay: false,
         bound: true,
         breakpoints: {
@@ -15,7 +15,7 @@ window.addEventListener('load', function(){
                 perView: 2
             },
             1023: {
-                perView: 2
+                perView: 3
             }
         }
     }).mount()

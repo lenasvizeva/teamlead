@@ -2,12 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh;
+    min-height: 100vh;
 
     .h1 {
         text-align: left;
         font-size: 5.6rem;
-        // margin-bottom: 4rem;
+
+        @include mobile {
+            margin-top: 5rem;
+            text-align: center;
+        }
     }
 
     .h3 {
@@ -16,6 +20,10 @@
 
     .product {
         background-color: transparent;
+
+        @include mobile {
+            text-align: center;
+        }
 
         button {
             background-color: $color-white;
@@ -35,6 +43,13 @@
         display: inline-block;
         flex-basis: 80%;
         margin-bottom: .5rem;
+
+        @include mobile {
+            flex-basis: 90%;
+        }
+        @include tablet {
+            flex-basis: 60%;
+        }
     }
 
     p, h1, h3 {
@@ -47,6 +62,9 @@
 
     .list {
         
+        @include tablet {
+            margin-bottom: 5rem;
+        }
 
         li {
             display: flex;
@@ -60,6 +78,13 @@
                 background-image: url('../img/svg/arrow.svg');
                 background-repeat: no-repeat;
                 flex-basis: 5%;
+
+                @include mobile {
+                    flex-basis: 10%;
+                }
+                @include tablet {
+                    flex-basis: 10%;
+                }
             }
 
             &:first-child {
@@ -68,26 +93,60 @@
         }
     }
 
+    .button {
+        @include mobile {
+            margin: 2rem auto;
+        }
+    }
 }
 
 
 // composition 
 .composition {
+
     .container {
-        padding-top: 4rem;
         justify-content: space-between;
+
+        @include mobile {
+            align-items: center;
+        }
     }
 
     &__img {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 25rem;
+        max-width: 20rem;
+
+        @include mobile {
+            order: 1;
+            width: 15rem;
+        }
+        @include tablet {
+            width: 25vw;
+        }
+
+        img {
+            width: 100%;
+        }
     }
 
     .button {
         margin: 0 auto;
-        margin-top: -4%;
+        margin-top: 3rem;
+    }
+
+    &__item {
+
+        @include tablet {
+            width: 25vw;
+        }
+    }
+
+    &__list {
+        @include mobile {
+            order: 2;
+        }
     }
 }
 
@@ -101,6 +160,7 @@
     padding: 2rem 0;
     background-color: $color-grey;
     box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 20%);
+    border-radius: 3%;
 
     &__img {
         width: 10rem;
@@ -118,5 +178,9 @@
     &__info {
         max-width: 24rem;
         text-align: center;
+
+        @include tablet {
+            max-width: 16rem;
+        }
     }
 }
