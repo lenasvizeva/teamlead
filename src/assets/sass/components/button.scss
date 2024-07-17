@@ -13,6 +13,7 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    color: $color-black;
 
     &:hover {
         background-color: #bdbdbd;
